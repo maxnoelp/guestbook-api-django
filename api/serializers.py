@@ -4,4 +4,4 @@ from .models import guestBook
 class bookSerializers(serializers.ModelSerializer):
     class Meta:
         model = guestBook
-        fields = ['name', 'text', 'date', 'link']
+        fields = ['id', 'name', 'text', 'date', 'link']

@@ -4,7 +4,7 @@ from rest_framework import status
 from .models import guestBook
 from .serializers import bookSerializers
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', 'DELETE'])
 def content_list(request):
     if request.method == 'GET':
         guests = guestBook.objects.all()
