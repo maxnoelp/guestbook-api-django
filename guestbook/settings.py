@@ -130,6 +130,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
+    'https://prinz-code.de'
+
 ]
 
 CORS_ALLOW_METHODS = [
@@ -143,4 +145,10 @@ CORS_ALLOW_METHODS = [
 CORS_ALLOW_HEADERS = [
     "content-type",
     "authorization",
+]
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'guestbook-api-django.onrender.com',
 ]
